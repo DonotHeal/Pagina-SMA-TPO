@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(17, 165, 69);
+}
+
+.headerNavbarList {
+    height: 75px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    align-items: center;
+    background-color: brown;
+}
+
+.headerNavbarLink {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.headerNavbarLink:hover {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.headerApi {
+    height: 75px;
+    text-align: center;
+    background-color: aliceblue;
+}
