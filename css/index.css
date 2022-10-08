@@ -3,15 +3,6 @@
     text-align: center;
 }
 
-.indexEstacionesList{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-
-}
-
-
-
 *{
 	border:0;
 	box-sizing: border-box;
@@ -69,11 +60,11 @@ nav li a{
 	color:#fff;
 	font-size: 2rem;
 	font-weight: bold;
-	left: 10%;
+	/* left: 10%; */
 	position: absolute;
 	text-align: center;
 	/* top:40%; */
-	width: 80%
+	width: 100%
 }
 .texto-interior2{
 	color:#fff;
@@ -86,13 +77,47 @@ nav li a{
 	width: 80%
 }
 .texto-interior2 h2 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family:'Poiret One', cursive, helvetica;
     font-size: 48px;
+	font-weight: bolder;
+	color: rgb(231, 231, 231);
+	
+}
+
+.texto-interior h4 {
+	font-family:'Poiret One', cursive, helvetica;
+    font-size: 48px;
+	font-weight: bolder;
+	color: rgb(231, 231, 231);
+	padding: 20px;
+}
+
+.indexEstacionesList{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+	/* width: 80vw; */
+}
+
+.indexEstacionesList li p {
+	margin: 0;
+}
+
+.indexEstacionesList li p a {
+	text-decoration: none;
+	color: white;
+}
+
+.indexEstacionesList li a img {
+	width: 30vw;
+	height: 35vh;
 }
 	
 .img-uno{background-image:url(../img/smbackground.jpg)}
 
-.img-dos{background-image:url("https://tinyurl.com/gw9vvxs")}
+.img-dos{
+	background: linear-gradient(0deg, rgb(2, 188, 179) 0%, rgb(20, 109, 0) 50%, rgb(2, 188, 179) 100%);
+}
 
 .img-tres{background-image:url("https://tinyurl.com/zod9tj3")}
 
