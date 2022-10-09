@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-.indexEstaciones h4{
-    text-align: center;
-}
+
 
 *{
 	border:0;
@@ -16,7 +14,10 @@ body{
 	font-size:100%;
 	line-height: 1.3
 }
-
+.indexEstaciones h4{
+    text-align: center;
+	display: none;
+}
 p{
 	font-size: 1.4rem;
 	margin:0 0 24px 0
@@ -52,6 +53,15 @@ nav li a{
 	background-repeat: no-repeat;
 	background-size:  cover;
     height: 100vh;
+	max-width: 100%;
+	position: relative
+}
+.parallax2{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    height: 190vh;
 	max-width: 100%;
 	position: relative
 }
@@ -94,8 +104,10 @@ nav li a{
 
 .indexEstacionesList{
     display: flex;
+	flex-direction: column;
     list-style-type: none;
     justify-content: space-around;
+	margin: 0;
 	/* width: 80vw; */
 }
 
@@ -109,8 +121,8 @@ nav li a{
 }
 
 .indexEstacionesList li a img {
-	width: 30vw;
-	height: 35vh;
+	width: 80vw;
+	height: 40vh;
 }
 	
 .img-uno{background-image:url(../img/smbackground.jpg)}
@@ -126,3 +138,30 @@ nav li a{
 	padding:5%;
 	width: 90%
 }
+@media screen and (min-width: 992px) {
+	.indexEstacionesList{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-around;
+		margin: 0;
+		/* width: 80vw; */
+	}
+	.parallax2{
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:  cover;
+		height: 100vh;
+		max-width: 100%;
+		position: relative
+	}
+	.indexEstaciones h4{
+		text-align: center;
+		display: block;
+	}
+	.indexEstacionesList li a img {
+		width: 30vw;
+		height: 35vh;
+	}
+ }

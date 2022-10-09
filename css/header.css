@@ -9,28 +9,29 @@ html {
 }
 
 .header {
-    height: 75px;
+    /* height: 75px; */
     display: flex;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.457);
+    background-color: rgba(0, 0, 0, 0.603);
     justify-content: space-between;
     align-content: center;
     position: fixed;
-    z-index: 1111
+    z-index: 1111;
     
+}
+.headerNavbarList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.burgerIndex{
+position: fixed;
+top: 15px;
+right: 10px;
 }
 .headerLogo{
     margin-left: 10px;
 }
-.headerNavbarList {
-    height: 75px;
-    list-style-type: none;
-    display: flex;
-    width: 700px;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .headerNavbarLink {
     text-decoration: none;
     color: antiquewhite;
@@ -40,8 +41,29 @@ html {
     color: antiquewhite;
     text-decoration: none;
 }
-
-.headerApi {
+.headerApi{
+    display: none;
+}
+.navLink{
+    font-size: 17px;
+}
+@media screen and (min-width: 992px) {
+   .headerNavbarList {
+    /* height: 75px; */
+    list-style-type: none;
+    display: flex;
+    /* width: 700px; */
+    justify-content: space-around;
+    align-items: center;   
+    }  
+ .headerApi {
+    display: block;
     height: 75px;
     text-align: center;
+    color: white;
 }
+.navLink{
+    font-size: 40px;
+}
+}
+

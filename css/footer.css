@@ -6,7 +6,7 @@
 .footerRedes {
     display: flex;
     list-style-type: none;
-    width: 350px;
+    width: 100vw;
     justify-content: space-around;
 }
 #redesSociales{
