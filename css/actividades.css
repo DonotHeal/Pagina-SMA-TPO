@@ -78,7 +78,7 @@ nav li a{
 	color:#fff;
 	font-size: 2rem;
 	font-weight: bold;
-	left: 10%;
+	/* left: 10%; */
 	position: absolute;
 	text-align: center;
     top: 6%;
@@ -130,14 +130,23 @@ nav li a{
 } */
 	
 .img-uno{
-    background: radial-gradient(circle, rgba(251,176,63,1) 0%, rgba(252,70,70,1) 100%);;
+    background: radial-gradient(circle, rgb(255, 185, 80) 0%, rgba(252,70,70,1) 100%);
+    border-bottom: 2px solid black;
 }
 
 .img-dos{
-	background: linear-gradient(0deg, rgb(2, 188, 179) 0%, rgb(20, 109, 0) 50%, rgb(2, 188, 179) 100%);
+	background: radial-gradient(circle, rgb(177, 0, 0) 0%, rgb(116, 70, 0) 100%);
+    border-bottom: 2px solid black;
 }
 
-.img-tres{background-image:url("https://tinyurl.com/zod9tj3")}
+.img-tres{	
+    background: radial-gradient(circle, rgb(0, 97, 153) 0%, rgb(105, 105, 105) 50%, rgb(8, 8, 8) 100%);
+    border-bottom: 2px solid black;
+}
+.img-cuatro{	
+    background: radial-gradient(circle, rgb(0, 145, 53) 0%, rgb(92, 111, 0) 100%);
+    border-bottom: 2px solid black;
+}
 
 
 .texto{
