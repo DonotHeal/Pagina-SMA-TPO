@@ -1,0 +1,5 @@
+-Corregir pagina actividades.
+-Correccion media querys en todas las paginas.
+-incluir un api.
+-formulario.
+-opcional - revisar imagenes.
