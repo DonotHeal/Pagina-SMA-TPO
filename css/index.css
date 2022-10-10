@@ -23,28 +23,6 @@ p{
 	margin:0 0 24px 0
 }
 
-
-
-nav ul{
-	display: table;
-	list-style-type: none;
-	width:100%;
-}
-
-nav li{
-	display: table-cell;
-	text-align: center
-}
-
-nav li a{
-  background-color:rgba(50,50,50,.2);
-	border:2px solid #fff;
-	color:tomato;
-	font-family: helvetica;
-	font-size: 2rem;
-	padding: 10px;
-	text-decoration: none
-}
 .parallas, .main, .texto{margin:0 auto}
 
 .parallax{
@@ -70,10 +48,8 @@ nav li a{
 	color:#fff;
 	font-size: 2rem;
 	font-weight: bold;
-	/* left: 10%; */
 	position: absolute;
 	text-align: center;
-	/* top:40%; */
 	width: 100%
 }
 .texto-interior2{
@@ -108,7 +84,6 @@ nav li a{
     list-style-type: none;
     justify-content: space-around;
 	margin: 0;
-	/* width: 80vw; */
 }
 
 .indexEstacionesList li p {
@@ -145,7 +120,6 @@ nav li a{
 		list-style-type: none;
 		justify-content: space-around;
 		margin: 0;
-		/* width: 80vw; */
 	}
 	.parallax2{
 		background-attachment: fixed;
