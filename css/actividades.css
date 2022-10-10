@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+*{
+	border:0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body{
+	color:rgb(100,100,100);
+	font-family: 'Poiret One', cursive, helvetica;
+	font-size:100%;
+	line-height: 1.3
+}
+.indexEstaciones h4{
+    text-align: center;
+	display: none;
+}
+p{
+	font-size: 1.4rem;
+	margin:0 0 24px 0
+}
+
+
+
+nav ul{
+	display: table;
+	list-style-type: none;
+	width:100%;
+}
+
+nav li{
+	display: table-cell;
+	text-align: center
+}
+
+nav li a{
+  background-color:rgba(50,50,50,.2);
+	border:2px solid #fff;
+	color:tomato;
+	font-family: helvetica;
+	font-size: 2rem;
+	padding: 10px;
+	text-decoration: none
+}
+.parallas, .main, .texto{margin:0 auto}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    height: 300vh;
+	position: relative
+}
+.parallax2{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    height: 190vh;
+	position: relative
+}
+
+.texto-interior{
+	color:#fff;
+	font-size: 2rem;
+	font-weight: bold;
+	/* left: 10%; */
+	position: absolute;
+	text-align: center;
+	/* top:40%; */
+	width: 100%
+}
+.texto-interior2{
+	color:#fff;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+    top: 6%;
+	width: 100%
+}
+.texto-interior2 h2 {
+    font-family:'Poiret One', cursive, helvetica;
+    font-size: 70px;
+	font-weight: bolder;
+	color: rgb(231, 231, 231);
+	
+}
+.listaActividades{
+    list-style-type: none;
+}
+.listaImagenes{
+    width: 80vw;
+}
+
+.texto-interior h4 {
+	font-family:'Poiret One', cursive, helvetica;
+    font-size: 48px;
+	font-weight: bolder;
+	color: rgb(231, 231, 231);
+	padding: 20px;
+}
+
+/* .indexEstacionesList{
+    display: flex;
+	flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+	margin: 0;
+	width: 80vw;
+}
+
+.indexEstacionesList li p {
+	margin: 0;
+}
+
+.indexEstacionesList li p a {
+	text-decoration: none;
+	color: white;
+}
+
+.indexEstacionesList li a img {
+	width: 80vw;
+	height: 40vh;
+} */
+	
+.img-uno{
+    background: radial-gradient(circle, rgba(251,176,63,1) 0%, rgba(252,70,70,1) 100%);;
+}
+
+.img-dos{
+	background: linear-gradient(0deg, rgb(2, 188, 179) 0%, rgb(20, 109, 0) 50%, rgb(2, 188, 179) 100%);
+}
+
+.img-tres{background-image:url("https://tinyurl.com/zod9tj3")}
+
+
+.texto{
+	padding:5%;
+	width: 90%
+}
+@media screen and (min-width: 768px) {
+    
+.parallax{	
+    height: 330vh;
+}
+}
+@media screen and (min-width: 992px) {
+	.indexEstacionesList{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-around;
+		margin: 0;
+		/* width: 80vw; */
+	}
+    .parallax{
+        height: 100vh;
+    }
+    .texto-interior2{
+        left: 0;
+        top: 10%;
+        margin:0;
+        max-width: 100vw;
+    }
+	.parallax2{
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:  cover;
+		height: 100vh;
+		max-width: 100%;
+		position: relative
+	}
+	.indexEstaciones h4{
+		text-align: center;
+		display: block;
+	}
+	.indexEstacionesList li a img {
+		width: 30vw;
+		height: 35vh;
+	}
+    .listaActividades{
+        display: flex;
+        justify-content: space-around;
+
+        width: 100vw;
+        left: 5%;
+        right: 5%;
+
+    }
+    .listaActividades li{
+        width: 30vw;
+    }
+    .listaActividades li p {
+        margin:0;
+    }
+    .listaImagenes{
+        width: 25vw;
+        height: 40vh;
+    }
+ }
