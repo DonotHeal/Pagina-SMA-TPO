@@ -8,7 +8,7 @@
         <!-- LINK CSS BOOTSTRAP -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- LINK A NUESTRO CSS -->
-        <link rel="stylesheet" href="../css/informacion.css">
+        <link rel="stylesheet" href="../css/contacto.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
         <!-- LINK A FONT -->
@@ -35,7 +35,7 @@
                     <a class="nav-link navLink" href="./turismo.html">Turismo <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link navLink" href="./informacion.html">Información <span class="sr-only">(current)</span></a>
+                    <a class="nav-link navLink" href="./contacto.html">Información <span class="sr-only">(current)</span></a>
                 </li>
               </ul>
               <span class="headerApi">Api del Clima y Horario.</span>
@@ -43,6 +43,40 @@
           </nav>
     </div>
     </header>
+
+    <div class="cont">
+        <form action="" name="fContacto">
+            <ul class="contactoLista">
+                <li>
+                    <label for="apellido">Ingrese su apellido.</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </li>
+                <li>
+                    <label for="nombre">Ingrese su nombre.</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </li>
+                <li>
+                    <label for="mail">Ingrese su Email de contacto.</label>
+                    <input type="email" name="mail" id="mail" placeholder="email@email.com">
+                </li>
+                <li>
+                    <label for="numeroTel">Ingrese un Numero de telefono</label>
+                    <input type="text" name="numeroTel" id="numeroTel" placeholder="+54-000-000-0000">
+                </li>
+                <li id="liAsuntoContacto">
+                    <label for="asuntoContacto">Ingrese el motivo de su contacto.</label>
+                    <textarea id="asuntoContacto" name="asuntoContacto" rows="4" cols="150">
+                        
+                    </textarea>
+                </li>
+                <li>
+                    <button type="button" value="enviar" id="enviar" onclick="">
+                        Enviar formulario.
+                    </button>
+                </li>
+            </ul>
+        </form>
+    </div>
 
     <footer class="footer">
         <section>
