@@ -15,7 +15,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="./img/SMAIcon.png">
+        <link rel="icon" type="image/x-icon" href="../img/SMAIcon.png">
+      
     </head>
 <body>
     <header class="header">
@@ -35,7 +36,7 @@
                     <a class="nav-link navLink" href="./turismo.html">Turismo <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link navLink" href="./contacto.html">Información <span class="sr-only">(current)</span></a>
+                    <a class="nav-link navLink" href="./contacto.html">Contacto <span class="sr-only">(current)</span></a>
                 </li>
               </ul>
               <span class="headerApi">Api del Clima y Horario.</span>
@@ -45,34 +46,32 @@
     </header>
 
     <div class="cont">
-        <form action="" name="fContacto">
+        <form action="" id="fContacto" onsubmit="return validarFormulario()">
             <ul class="contactoLista">
                 <li>
-                    <label for="apellido">Ingrese su apellido.</label>
+                    <label for="apellido">Ingrese su apellido:</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                 </li>
                 <li>
-                    <label for="nombre">Ingrese su nombre.</label>
+                    <label for="nombre">Ingrese su nombre:</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                 </li>
                 <li>
-                    <label for="mail">Ingrese su Email de contacto.</label>
+                    <label for="mail">Ingrese su Email de contacto:</label>
                     <input type="email" name="mail" id="mail" placeholder="email@email.com">
                 </li>
                 <li>
-                    <label for="numeroTel">Ingrese un Numero de telefono</label>
-                    <input type="text" name="numeroTel" id="numeroTel" placeholder="+54-000-000-0000">
+                    <label for="numeroTel">Ingrese un Numero de telefono:</label>
+                    <input type="number" name="numeroTel" id="numeroTel" placeholder="+54-000-000-0000">
                 </li>
                 <li id="liAsuntoContacto">
-                    <label for="asuntoContacto">Ingrese el motivo de su contacto.</label>
-                    <textarea id="asuntoContacto" name="asuntoContacto" rows="4" cols="150">
+                    <label for="asuntoContacto">Ingrese el motivo de su contacto:</label>
+                    <textarea id="asuntoContacto" name="asuntoContacto" rows="4">
                         
                     </textarea>
                 </li>
                 <li>
-                    <button type="button" value="enviar" id="enviar" onclick="">
-                        Enviar formulario.
-                    </button>
+                    <button type="submit" onsubmit="validarFormulario()">Enviar Formulario</button>
                 </li>
             </ul>
         </form>
@@ -103,6 +102,37 @@
             </ul>
         </section>
     </footer>
+    <script>
+        function validarFormulario(){
+            let apellido = document.getElementById("apellido").value;
+            let nombre = document.getElementById("nombre").value;
+            let mail = document.getElementById("mail").value;
+            let numeroTel = document.getElementById("numeroTel").value;
+            let asuntoContacto = document.getElementById("asuntoContacto").value;
+            if (apellido.trim() == "") {
+            alert("Por favor ingrese su apellido.");
+            return false;
+            }
+            if (nombre.trim() == "") {
+            alert("Por favor ingrese su nombre.");
+            return false;
+            }
+            if (mail.trim() == "") {
+            alert("Por favor ingrese su mail.");
+            return false;
+            }
+            if (numeroTel.trim() == "") {
+            alert("Por favor ingrese su numero de telefono.");
+            return false;
+            }
+
+            if (asuntoContacto.trim() == "") {
+            alert("Por favor ingrese su motivo de contacto.");
+            return false;
+            }
+
+        }
+    </script>
 </body>
 <!--LINK JAVA BOOTSTRAP-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

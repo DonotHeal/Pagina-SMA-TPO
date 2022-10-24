@@ -23,4 +23,17 @@
 #asuntoContacto{
     resize: none;
     text-align: center;
+    width: 50vw;
+}
+
+
+/* borrar flechitas de numero */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
