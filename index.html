@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Martin de los Andes</title>   
-    <!-- LINK A AJAX -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"  ></script> -->
     <!-- LINK CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- LINK A NUESTRO CSS -->
@@ -23,9 +21,9 @@
   
     <div class="wrapper">
 		<header class="header">
-            <div id="app" class="container-fluid p-0">
+            <div  class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="#" class="headerLogo"><img src="./img/logoSMA.png" width="150px" height="75px" alt="Logo San Martin de los Andes"></a>
+                <a href="#" class="headerLogo"><img src="./img/logoSMA.jpg" width="150px" height="75px" alt="Logo San Martin de los Andes"></a>
                 <button class="navbar-toggler burgerIndex" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,8 +39,12 @@
                     <li class="nav-item active">
                         <a class="nav-link navLink" href="./paginas/contacto.html">Contacto <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item headerApi" id="app">
+                        <p>Fecha: {{dia[0]}}</p>
+                        <p>Maxima: {{tMaxima[0]}}ºC  Minima: {{tMinima[0]}}ºC</p>
+                    </li>
                   </ul>
-                  <span class="headerApi">{{dia[0].day}}<br>{{tMaxima[0]}}<br>{{tMinima[0]}}</span>
+             
                 </div>
               </nav>
         </div>

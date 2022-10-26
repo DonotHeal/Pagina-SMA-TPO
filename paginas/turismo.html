@@ -27,18 +27,21 @@
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto headerNavbarList">
-                <li class="nav-item active ">
-                  <a class="nav-link navLink" href="./actividades.html">Actividades <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link navLink" href="./turismo.html">Turismo <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link navLink" href="./contacto.html">Contacto <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
-              <span class="headerApi">Api del Clima y Horario.</span>
+                <ul class="navbar-nav mr-auto headerNavbarList">
+                  <li class="nav-item active ">
+                    <a class="nav-link navLink" href="../paginas/actividades.html">Actividades <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link navLink" href="../paginas/turismo.html">Turismo <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link navLink" href="../paginas/contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item headerApi" id="app">
+                      <p>Fecha: {{dia[0]}}</p>
+                      <p>Maxima: {{tMaxima[0]}}ºC  Minima: {{tMinima[0]}}ºC</p>
+                  </li>
+                </ul>
             </div>
           </nav>
     </div>
@@ -109,6 +112,9 @@
             </ul>
         </section>
     </footer>
+     <!-- LINK A VUE -->
+     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+     <script src="../js/api.js"></script>
 </body>
 <!--LINK JAVA BOOTSTRAP-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

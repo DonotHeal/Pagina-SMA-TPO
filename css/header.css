@@ -66,6 +66,10 @@ nav li a{
 	padding: 10px;
 	text-decoration: none
 }
+nav li a:hover{
+    border: 2px solid green;
+    transition: border 3s;
+}
 @media screen and (min-width: 992px) {
    .headerNavbarList {
     /* height: 75px; */
@@ -76,10 +80,13 @@ nav li a{
     align-items: center;   
     }  
  .headerApi {
-    display: block;
-    height: 75px;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+.headerApi p{
+    margin: 0;
 }
 .navLink{
     font-size: 40px;

@@ -62,6 +62,10 @@ p{
 	top:50%;
 	width: 80%
 }
+.texto-interior2:hover{
+	transform: scale(1.2);
+	transition: transform 4s;
+}
 .texto-interior2 h2 {
     font-family:'Poiret One', cursive, helvetica;
     font-size: 48px;
